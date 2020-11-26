@@ -1,3 +1,5 @@
+import org.junit.*;
+import org.junit.jupiter.api.extension.*;
 import org.junit.jupiter.params.*;
 import org.junit.jupiter.params.provider.*;
 
@@ -9,7 +11,16 @@ import java.util.stream.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@ExtendWith(TestOutputsLogger.class)
 public class TestOutputs {
+
+    static {
+        try {
+            Files.copy(Paths.get("./README-template.md"), Paths.get("./README.md"), StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     static Stream<String> problemCodeDataProvider() {
         final File[] dirs = new File("src/main/java/")
@@ -46,5 +57,42 @@ public class TestOutputs {
         Method meth = cls.getMethod("main", String[].class);
         String[] params = null;
         meth.invoke(null, (Object) params);
+    }
+}
+
+class TestOutputsLogger implements TestWatcher {
+    @Override
+    public void testSuccessful(ExtensionContext context) {
+        write(context.getDisplayName(), "✔️");
+    }
+
+    @Override
+    public void testFailed(ExtensionContext context, Throwable cause) {
+        write(context.getDisplayName(), "❌️");
+    }
+
+    @Override
+    public void testAborted(ExtensionContext context, Throwable cause) {
+        write(context.getDisplayName(), "\uD83D\uDEA7️");
+    }
+
+    @Override
+    public void testDisabled(ExtensionContext context, Optional<String> reason) {
+        write(context.getDisplayName(), "\uD83D\uDEA7️");
+    }
+
+    private static void write(final String testDisplayName, final String emoji) {
+        final String problemCode = testDisplayName.split("] ")[1];
+        FileWriter writer = null;
+        try {
+            writer = new FileWriter("./README.md", true);
+            writer.append(String.format("* %s %s ", emoji, problemCode));
+            writer.append(String.format("[description](https://www.codechef.com/problems/%s) ", problemCode));
+            writer.append(String.format("[solution](src/main/java/%s)", problemCode));
+            writer.append("\n");
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
