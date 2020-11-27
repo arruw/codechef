@@ -83,13 +83,12 @@ class TestOutputsLogger implements TestWatcher {
 
     private static void write(final String testDisplayName, final String emoji) {
         final String problemCode = testDisplayName.split("] ")[1];
+        final String descriptionLinkMd = String.format("[description](https://www.codechef.com/problems/%s) ", problemCode);
+        final String solutionLinkMd = String.format("[solution](src/main/java/%s)", problemCode);
         FileWriter writer = null;
         try {
             writer = new FileWriter("./README.md", true);
-            writer.append(String.format("* %s %s ", emoji, problemCode));
-            writer.append(String.format("[description](https://www.codechef.com/problems/%s) ", problemCode));
-            writer.append(String.format("[solution](src/main/java/%s)", problemCode));
-            writer.append("\n");
+            writer.append(String.format("| %s | %s | %s | %s |\n", problemCode, emoji, descriptionLinkMd, solutionLinkMd));
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
