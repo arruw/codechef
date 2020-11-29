@@ -42,6 +42,5 @@ public class Main {
         final int K = _in.nextInt();
         final int[] A = IntStream.range(0, N).map(x -> _in.nextInt()).toArray();
         System.out.println(solve(N, K, A));
-//        test();
     }
 }
