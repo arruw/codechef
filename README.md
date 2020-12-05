@@ -5,6 +5,7 @@
 ## Solutions ![Outputs](https://github.com/matjazmav/codechef/workflows/Outputs/badge.svg)
 | Code | Status | Description | Solution |
 | ---- | ------ | ----------- | -------- |
+| AMSGAME2 | ✔️ | [description](https://www.codechef.com/problems/AMSGAME2)  | [solution](src/main/java/AMSGAME2) |
 | BEGGASOL | ✔️ | [description](https://www.codechef.com/problems/BEGGASOL)  | [solution](src/main/java/BEGGASOL) |
 | CDQU5 | ✔️ | [description](https://www.codechef.com/problems/CDQU5)  | [solution](src/main/java/CDQU5) |
 | FROGV | ✔️ | [description](https://www.codechef.com/problems/FROGV)  | [solution](src/main/java/FROGV) |
