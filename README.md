@@ -15,5 +15,5 @@ This branch [**main**](https://github.com/matjazmav/codechef/tree/main) contain 
 | LRNDSA07/KPRIME | ✔️ | [description](https://www.codechef.com/LRNDSA07/problems/KPRIME)  | [solution](src/main/java/LRNDSA07/KPRIME) | [submissions](https://www.codechef.com/LRNDSA07/status/KPRIME,matjazmav) |
 | LRNDSA07/SUBINC | ✔️ | [description](https://www.codechef.com/LRNDSA07/problems/SUBINC)  | [solution](src/main/java/LRNDSA07/SUBINC) | [submissions](https://www.codechef.com/LRNDSA07/status/SUBINC,matjazmav) |
 | LTIME90B/BEGGASOL | ✔️ | [description](https://www.codechef.com/LTIME90B/problems/BEGGASOL)  | [solution](src/main/java/LTIME90B/BEGGASOL) | [submissions](https://www.codechef.com/LTIME90B/status/BEGGASOL,matjazmav) |
-| /GASOLINE | ✔️ | [description](https://www.codechef.com/problems/GASOLINE)  | [solution](src/main/java/Practice/GASOLINE) | [submissions](https://www.codechef.com/status/GASOLINE,matjazmav) |
-| /IPCCERT | ✔️ | [description](https://www.codechef.com/problems/IPCCERT)  | [solution](src/main/java/Practice/IPCCERT) | [submissions](https://www.codechef.com/status/IPCCERT,matjazmav) |
+| Practice/GASOLINE | ✔️ | [description](https://www.codechef.com/problems/GASOLINE)  | [solution](src/main/java/Practice/GASOLINE) | [submissions](https://www.codechef.com/status/GASOLINE,matjazmav) |
+| Practice/IPCCERT | ✔️ | [description](https://www.codechef.com/problems/IPCCERT)  | [solution](src/main/java/Practice/IPCCERT) | [submissions](https://www.codechef.com/status/IPCCERT,matjazmav) |

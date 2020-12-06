@@ -51,7 +51,7 @@ public class ReadmeWriter implements TestWatcher {
         FileWriter writer = null;
         try {
             writer = new FileWriter("./README.md", true);
-            writer.append(String.format("| %s/%s | %s | %s | %s | %s |\n", isPractice ? "" : problemCode[0], problemCode[1], emoji, descriptionLinkMd, solutionLinkMd, submissionsLinkMd));
+            writer.append(String.format("| %s/%s | %s | %s | %s | %s |\n", problemCode[0], problemCode[1], emoji, descriptionLinkMd, solutionLinkMd, submissionsLinkMd));
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
