@@ -1,11 +1,14 @@
-# CodeChef Solutions
+# CodeChef Solutions - Java
 
 [![Badge](https://cp-logo.vercel.app/codechef/matjazmav)](https://www.codechef.com/users/matjazmav)
+
+This branch [**main-cpp**](https://github.com/matjazmav/codechef/tree/main) contain solutions in Java, see branch [**main**](https://github.com/matjazmav/codechef/tree/main-cpp) for C++ solutions.
 
 ## Solutions ![Outputs](https://github.com/matjazmav/codechef/workflows/Outputs/badge.svg)
 | Code | Status | Description | Solution |
 | ---- | ------ | ----------- | -------- |
 | AMSGAME2 | ✔️ | [description](https://www.codechef.com/problems/AMSGAME2)  | [solution](src/main/java/AMSGAME2) |
+| APARTS | ✔️ | [description](https://www.codechef.com/problems/APARTS)  | [solution](src/main/java/APARTS) |
 | BEGGASOL | ✔️ | [description](https://www.codechef.com/problems/BEGGASOL)  | [solution](src/main/java/BEGGASOL) |
 | CDQU5 | ✔️ | [description](https://www.codechef.com/problems/CDQU5)  | [solution](src/main/java/CDQU5) |
 | FROGV | ✔️ | [description](https://www.codechef.com/problems/FROGV)  | [solution](src/main/java/FROGV) |
