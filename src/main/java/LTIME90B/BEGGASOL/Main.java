@@ -1,4 +1,4 @@
-package BEGGASOL;
+package LTIME90B.BEGGASOL;
 
 import java.io.*;
 import java.util.*;

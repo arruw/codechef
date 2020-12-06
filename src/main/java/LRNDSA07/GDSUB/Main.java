@@ -1,4 +1,4 @@
-package GDSUB;
+package LRNDSA07.GDSUB;
 
 import java.io.*;
 import java.util.*;

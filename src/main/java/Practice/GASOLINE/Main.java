@@ -1,4 +1,4 @@
-package GASOLINE;
+package Practice.GASOLINE;
 
 import java.io.*;
 import java.util.*;

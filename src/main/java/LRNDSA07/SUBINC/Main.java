@@ -1,4 +1,4 @@
-package SUBINC;
+package LRNDSA07.SUBINC;
 
 import java.io.*;
 import java.util.*;

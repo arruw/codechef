@@ -1,4 +1,4 @@
- package APARTS;
+ package LRNDSA07.APARTS;
 
 import java.io.*;
 import java.util.*;

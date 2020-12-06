@@ -36,7 +36,7 @@ public class Assert {
     }
 
     private static void runMainMethod(final String problemCode, final InputStream inputStream) throws Exception {
-        Class<?> cls = Class.forName(problemCode + ".Main");
+        Class<?> cls = Class.forName(problemCode.replace('/', '.') + ".Main");
         setFinalStatic(cls.getDeclaredField("_in"), new Scanner(inputStream));
         cls.getMethod("main", String[].class)
                 .invoke(null, (Object)null);

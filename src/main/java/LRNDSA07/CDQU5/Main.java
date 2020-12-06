@@ -1,4 +1,4 @@
-package CDQU5;
+package LRNDSA07.CDQU5;
 
 import java.io.*;
 import java.util.*;

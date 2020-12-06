@@ -37,13 +37,16 @@ public class ReadmeWriter implements TestWatcher {
     }
 
     private static void write(final String testDisplayName, final String emoji) {
-        final String problemCode = testDisplayName.split("] ")[1];
+        final String[] problemCode = testDisplayName.split("] ")[1].split("/");
         final String descriptionLinkMd = String.format("[description](https://www.codechef.com/problems/%s) ", problemCode);
         final String solutionLinkMd = String.format("[solution](src/main/java/%s)", problemCode);
+        final String submissionsLinkMd = problemCode[0] == "Practice"
+                ? String.format("[submissions](https://www.codechef.com/status/%s,matjazmav)", problemCode[1])
+                : String.format("[submissions](https://www.codechef.com/%s/status/%s,matjazmav)", problemCode[0], problemCode[1]);
         FileWriter writer = null;
         try {
             writer = new FileWriter("./README.md", true);
-            writer.append(String.format("| %s | %s | %s | %s |\n", problemCode, emoji, descriptionLinkMd, solutionLinkMd));
+            writer.append(String.format("| %s/%s | %s | %s | %s | %s |\n", problemCode[0] == "Practice" ? "" : problemCode[0], problemCode[1], emoji, descriptionLinkMd, solutionLinkMd, submissionsLinkMd));
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();

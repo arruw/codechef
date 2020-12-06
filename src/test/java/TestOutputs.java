@@ -18,7 +18,7 @@ public class TestOutputs {
 
     static Stream<String> problemDataProvider() {
         return Arrays.stream(new File("src/main/java/").listFiles(File::isDirectory))
-                .map(d -> d.getName())
+                .flatMap(d1 -> Arrays.stream(d1.listFiles(File::isDirectory)).map(d2 -> d1.getName() + "/" + d2.getName()))
                 .sorted();
     }
 

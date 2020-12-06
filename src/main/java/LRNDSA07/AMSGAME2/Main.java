@@ -1,4 +1,4 @@
-package AMSGAME2;
+package LRNDSA07.AMSGAME2;
 
 import java.io.*;
 import java.util.*;

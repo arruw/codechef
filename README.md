@@ -5,15 +5,15 @@
 This branch [**main**](https://github.com/matjazmav/codechef/tree/main) contain solutions in Java, see branch [**main-cpp**](https://github.com/matjazmav/codechef/tree/main-cpp) for C++ solutions.
 
 ## Solutions ![Outputs](https://github.com/matjazmav/codechef/workflows/Outputs/badge.svg)
-| Code | Status | Description | Solution |
-| ---- | ------ | ----------- | -------- |
-| AMSGAME2 | ✔️ | [description](https://www.codechef.com/problems/AMSGAME2)  | [solution](src/main/java/AMSGAME2) |
-| APARTS | ✔️ | [description](https://www.codechef.com/problems/APARTS)  | [solution](src/main/java/APARTS) |
-| BEGGASOL | ✔️ | [description](https://www.codechef.com/problems/BEGGASOL)  | [solution](src/main/java/BEGGASOL) |
-| CDQU5 | ✔️ | [description](https://www.codechef.com/problems/CDQU5)  | [solution](src/main/java/CDQU5) |
-| FROGV | ✔️ | [description](https://www.codechef.com/problems/FROGV)  | [solution](src/main/java/FROGV) |
-| GASOLINE | ✔️ | [description](https://www.codechef.com/problems/GASOLINE)  | [solution](src/main/java/GASOLINE) |
-| GDSUB | ✔️ | [description](https://www.codechef.com/problems/GDSUB)  | [solution](src/main/java/GDSUB) |
-| IPCCERT | ✔️ | [description](https://www.codechef.com/problems/IPCCERT)  | [solution](src/main/java/IPCCERT) |
-| KPRIME | ✔️ | [description](https://www.codechef.com/problems/KPRIME)  | [solution](src/main/java/KPRIME) |
-| SUBINC | ✔️ | [description](https://www.codechef.com/problems/SUBINC)  | [solution](src/main/java/SUBINC) |
+| Code | Status | Description | Solution | Submissions |
+| ---- | ------ | ----------- | -------- | ----------- |
+| LRNDSA07/AMSGAME2 | ✔️ | [description](https://www.codechef.com/problems/LRNDSA07)  | [solution](src/main/java/LRNDSA07) | [submissions](https://www.codechef.com/LRNDSA07/status/AMSGAME2,matjazmav) |
+| LRNDSA07/APARTS | ✔️ | [description](https://www.codechef.com/problems/LRNDSA07)  | [solution](src/main/java/LRNDSA07) | [submissions](https://www.codechef.com/LRNDSA07/status/APARTS,matjazmav) |
+| LRNDSA07/CDQU5 | ✔️ | [description](https://www.codechef.com/problems/LRNDSA07)  | [solution](src/main/java/LRNDSA07) | [submissions](https://www.codechef.com/LRNDSA07/status/CDQU5,matjazmav) |
+| LRNDSA07/FROGV | ✔️ | [description](https://www.codechef.com/problems/LRNDSA07)  | [solution](src/main/java/LRNDSA07) | [submissions](https://www.codechef.com/LRNDSA07/status/FROGV,matjazmav) |
+| LRNDSA07/GDSUB | ✔️ | [description](https://www.codechef.com/problems/LRNDSA07)  | [solution](src/main/java/LRNDSA07) | [submissions](https://www.codechef.com/LRNDSA07/status/GDSUB,matjazmav) |
+| LRNDSA07/KPRIME | ✔️ | [description](https://www.codechef.com/problems/LRNDSA07)  | [solution](src/main/java/LRNDSA07) | [submissions](https://www.codechef.com/LRNDSA07/status/KPRIME,matjazmav) |
+| LRNDSA07/SUBINC | ✔️ | [description](https://www.codechef.com/problems/LRNDSA07)  | [solution](src/main/java/LRNDSA07) | [submissions](https://www.codechef.com/LRNDSA07/status/SUBINC,matjazmav) |
+| LTIME90B/BEGGASOL | ✔️ | [description](https://www.codechef.com/problems/LTIME90B)  | [solution](src/main/java/LTIME90B) | [submissions](https://www.codechef.com/LTIME90B/status/BEGGASOL,matjazmav) |
+| Practice/GASOLINE | ✔️ | [description](https://www.codechef.com/problems/Practice)  | [solution](src/main/java/Practice) | [submissions](https://www.codechef.com/Practice/status/GASOLINE,matjazmav) |
+| Practice/IPCCERT | ✔️ | [description](https://www.codechef.com/problems/Practice)  | [solution](src/main/java/Practice) | [submissions](https://www.codechef.com/Practice/status/IPCCERT,matjazmav) |

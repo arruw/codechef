@@ -1,4 +1,4 @@
-package KPRIME;
+package LRNDSA07.KPRIME;
 
 import java.io.*;
 import java.util.*;

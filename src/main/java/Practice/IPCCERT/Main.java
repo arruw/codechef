@@ -1,4 +1,4 @@
-package IPCCERT;
+package Practice.IPCCERT;
 
 import java.io.*;
 import java.util.*;
