@@ -5,6 +5,7 @@ import java.util.*;
 
 public class Main {
     private static final Scanner _in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+    private static final PrintWriter _out = new PrintWriter(System.out);
 
     private static void solve() {
         final int N = _in.nextInt();
@@ -25,15 +26,16 @@ public class Main {
                     max = Math.max(prevMax, currMax);
                 }
                 if (A[i][j] > max) {
-                    System.out.print("1");
+                    _out.print(1);
                 } else {
                     A[i][j] = max;
-                    System.out.print("0");
+                    _out.print(0);
                 }
                 prevMax = currMax;
             }
-            System.out.println();
+            _out.println();
         }
+        _out.flush();
     }
 
     public static void main(String[] args) throws Exception {
