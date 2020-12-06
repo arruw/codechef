@@ -8,6 +8,8 @@ import java.util.*;
 
 public class ReadmeWriter implements TestWatcher {
 
+    private static final String CODECHEF_URL = "https://www.codechef.com";
+
     public static void initialize() {
         try {
             Files.copy(Paths.get("./README-template.md"), Paths.get("./README.md"), StandardCopyOption.REPLACE_EXISTING);
@@ -38,15 +40,18 @@ public class ReadmeWriter implements TestWatcher {
 
     private static void write(final String testDisplayName, final String emoji) {
         final String[] problemCode = testDisplayName.split("] ")[1].split("/");
-        final String descriptionLinkMd = String.format("[description](https://www.codechef.com/problems/%s) ", problemCode);
-        final String solutionLinkMd = String.format("[solution](src/main/java/%s)", problemCode);
-        final String submissionsLinkMd = problemCode[0] == "Practice"
-                ? String.format("[submissions](https://www.codechef.com/status/%s,matjazmav)", problemCode[1])
-                : String.format("[submissions](https://www.codechef.com/%s/status/%s,matjazmav)", problemCode[0], problemCode[1]);
+        final boolean isPractice = problemCode[0].equals("Practice");
+        final String descriptionLinkMd = isPractice
+                ? String.format("[description](%s/problems/%s) ", CODECHEF_URL, problemCode[1])
+                : String.format("[description](%s/%s/problems/%s) ", CODECHEF_URL, problemCode[0], problemCode[1]);
+        final String solutionLinkMd = String.format("[solution](src/main/java/%s/%s)", problemCode[0], problemCode[1]);
+        final String submissionsLinkMd = isPractice
+                ? String.format("[submissions](%s/status/%s,matjazmav)", CODECHEF_URL, problemCode[1])
+                : String.format("[submissions](%s/%s/status/%s,matjazmav)", CODECHEF_URL, problemCode[0], problemCode[1]);
         FileWriter writer = null;
         try {
             writer = new FileWriter("./README.md", true);
-            writer.append(String.format("| %s/%s | %s | %s | %s | %s |\n", problemCode[0] == "Practice" ? "" : problemCode[0], problemCode[1], emoji, descriptionLinkMd, solutionLinkMd, submissionsLinkMd));
+            writer.append(String.format("| %s/%s | %s | %s | %s | %s |\n", isPractice ? "" : problemCode[0], problemCode[1], emoji, descriptionLinkMd, solutionLinkMd, submissionsLinkMd));
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
